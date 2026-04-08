@@ -21,4 +21,10 @@ __pycache__/
 *$py.class
 .venv/
 env/
-venv/terraform/modules/lambda/lambda_function.zip
+venv/
+
+# Lambda deployment package (generated artifact)
+terraform/modules/lambda/lambda_function.zip
+
+# Claude Code local settings
+.claude/
