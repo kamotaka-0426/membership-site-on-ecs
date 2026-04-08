@@ -1,0 +1,24 @@
+# Terraform プロバイダキャッシュ・作業ディレクトリ（全環境共通）
+**/.terraform/
+
+# Terraform ステートファイル（DBパスワード・ARN等の機密情報を含む）
+*.tfstate
+*.tfstate.*
+
+# Terraform ロックファイル
+.terraform.lock.hcl
+
+# 変数ファイル（機密情報を含む場合があるため慣習的に除外）
+*.tfvars
+
+# 不要な作業ファイル
+terraform/envs/dev/test.txt
+terraform/envs/dev/response.json
+
+# Python 関連（後で使います）
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/terraform/modules/lambda/lambda_function.zip
