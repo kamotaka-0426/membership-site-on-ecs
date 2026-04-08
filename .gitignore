@@ -1,21 +1,21 @@
-# Terraform プロバイダキャッシュ・作業ディレクトリ（全環境共通）
+# Terraform provider cache and working directories (all environments)
 **/.terraform/
 
-# Terraform ステートファイル（DBパスワード・ARN等の機密情報を含む）
+# Terraform state files (contain sensitive data such as DB passwords and ARNs)
 *.tfstate
 *.tfstate.*
 
-# Terraform ロックファイル
+# Terraform lock file
 .terraform.lock.hcl
 
-# 変数ファイル（機密情報を含む場合があるため慣習的に除外）
+# Variable files (excluded by convention as they may contain sensitive values)
 *.tfvars
 
-# 不要な作業ファイル
+# Temporary working files
 terraform/envs/dev/test.txt
 terraform/envs/dev/response.json
 
-# Python 関連（後で使います）
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
